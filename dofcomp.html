@@ -1,0 +1,408 @@
+
+
+<html>
+<head><title> degree of comparision</title>
+<link rel = "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="noun.css">
+<link rel = "stylesheet" href="footer.css">
+
+    <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+     background-color: #F7F8FF; 
+   transition: all .4s;
+   width: 100%;
+   height: 100%;
+   font-family: "Poppins", sans-serif;
+}
+.head{
+font-size:62px;
+color: purple;
+}
+
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #D776A7;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #4D00AF;
+  font-style: italic;
+  font-size:28px; 
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color:   #740A81;
+  font-size:20px;
+  font-family: cursive;
+  padding: 0 11px;
+  
+  
+}
+
+ul li {
+  padding: 5px;
+  margin: 0px;
+  z-index:1000;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #CDBECD;
+  z-index: 1000;
+}
+
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+.tab {
+margin-left:322px;
+padding:22px;
+
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+.tab {
+margin-left:22px;
+padding:22px;
+
+}
+.head{
+font-size:33px;
+}
+}
+	</style>
+  
+
+  </head>
+  <body>
+<header>
+<div id="brand"><img src="logoA.jpg" style="border-radius: 50%; object-fit: cover; position: relative; box-shadow: 0 0 20px #FEABC5;">GrammarMaster</div>
+
+      <nav>
+     <ul>
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+     </ul>
+   </nav>
+
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <ul class="mobile-menu">
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+    
+	</ul>
+</div>
+</header>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div class="head"><u>Degree of comparision </u></div> 
+
+<p class="para">
+In simple words, the degree is the form of the adjective(Positive, comparative, and superlative) 
+used to show different degrees or levels denoted by the adjective.<br><br>
+The three forms -positive, comparative, superlative used for the qualitative comparison of adjectives
+</p>
+
+<p class="para">Examples-</p>
+
+<div class="heading">
+A)positive degree
+</div>
+
+<li>He is a good player.</li>
+
+<li>He is as good as his friend.</li>
+
+<div class="heading">
+B)Comparative degree
+</div>
+
+<li>He is better than his friend.</li>
+<br>
+<div class="heading">
+c)Superlative degree
+</div>
+<li>He is the best player in his friends.</li>
+
+<div class="heading">Types of the degree in English</div>
+<p class="para">
+There are three main types of degrees. They are positive, comparative and superlative degrees.
+</p>
+<br>
+
+<div class="heading">1)Positive degree</div>
+<p class="para">
+Positive degree is used to show the similarity between two nouns or noun groups. It can be affirmative or negative.
+</p>
+<p class="para">
+Its structure is as follows.
+</p>
+<p class="para">
+As/so+ positive degree adjective+ as
+</p>
+<p class="para">Example-</p>
+
+<li>John is as brave as his brother.</li>
+
+<li>John is not so/as brave as his brother.</li>
+
+<div class="heading">2)Comparative degree-</div>
+<p class="para">The comparative degree is used to compare two nouns or noun groups. Its structure is as follows.<br>
+Comparative degree adjective+ than.
+</p>
+<p class="para">Example-</p>
+
+<li>1)John is braver than his brother.</li>
+
+<li>John is not braver than his brother.</li>
+
+<div class="heading">3)Superlative degree-</div>
+<p class="para">The superlative degree is used to show the highest position of the noun or noun group.</p>
+<br>
+<p class="para">
+Its structure is as follows.
+</p>
+<p class="para">Example-</p>
+<li>John is the bravest person in his family.</li>
+<li>John is not the bravest person in his family.</li>
+<h2>How to change positive degree to comparative degree</h2>
+<li>Sam is not as kind as John.</li>
+
+<p class="para">
+Answer-John is kinder than Sam.
+</p>
+
+<div class="heading">Rules for changing positive to a comparative degree-</div>
+
+<li>Begin the sentence with a noun higher in degree.</li>
+
+<li>Use comparative degree adjectives.</li>
+
+<div class="heading">How to change comparative degree sentences to positive degree sentences</div>
+<p class="para">Examples-</p>
+
+<li>I can play better than you.</li>
+<p class="para">
+Answer-You can not play as well as I.
+</p>
+
+<div class="heading">Rules for changing comparative to a positive degree.</div>
+
+<li>First begin the sentence with the last noun or noun group.</li>
+
+<li>Use or remove not as per the need to keep the meaning the same.</li>
+
+<li>Use as+ positive degree adjective+ as</li>
+
+
+<div class="heading">How to change superlative degree sentences to a positive and comparative degree</div>
+<p class="para">
+Examples-
+</p>
+<li>Education is the best option.</li>
+
+<p class="para">
+Positive degree-No other option is as good as education.
+<br>
+Comparative degree-Education is better than any other option.
+</p>
+
+<div class="heading">Rules for changing superlative degree to positive and comparative degree.</div>
+<p class="para">We can change the superlative degree to a positive degree by beginning the sentence with no other. 
+Then use noun used after the adjective and use structure as+ positive degree adjective+ as
+<br>
+
+For changing superlative degree to comparative degree, 
+begin a sentence with the same noun used in superlative and then use Comparative degree adjective + than any other.
+
+</p>
+</div>
+
+
+  <hr>
+
+<button style="width:300px; color:  ;  height: 74px; margin:22px; justify-content:center;"> <a href="dofcompquiz.html"><h1><b>free sample quiz</h1></b></a></button>
+
+<footer>
+   <div class="footer-cont">
+        <h3> GrammarMaster </h3>
+		   <p> GrammarMaster is a convenient, fun and flexible online 
+		   course which takes you from the most basic through to more complex elements 
+		   of UK English grammar. With tutor support, build the foundations to be an effective communicator .</p>
+		     <div class="socials">
+			     <li><a href="#"> <i class="fa fa-facebook">           </i></a></li>
+                 <li><a href="#"> <i class="fa fa-twitter">              </i></a></li>
+				 <li><a href="#"> <i class="fa fa-google-plus">       </i></a></li>
+				 <li><a href="#"> <i class="fa fa-youtube">            </i></a></li>
+				 <li><a href="#"> <i class="fa fa-linkedin-square"> </i></a></li>
+			 </div>
+        </div>     
+			 <div class="footer-bottom">
+			 <p>copyright & copy; 2021
+			 <a href="#">GrammarMaster</a>
+			 </p>
+			 
+			 
+			 <div class="footer-menu">
+				      <li><a href="bosternavbar.html">home</a></li>
+					  <li><a href="aboutus.html">About</a></li>
+					  <li><a href="contactus.html">Contact</a></li>
+					  <li><a href="pronunciation.html">pronunciation</a></li>
+				 			 
+   </div>
+   </div>
+</footer>
+
+ 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+	
+<script>
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+
+</body>
+<html>

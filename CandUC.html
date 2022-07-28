@@ -1,0 +1,335 @@
+<html>
+<head>
+<title>countable and uncountable</title>
+<link rel = "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="noun.css">
+<link rel = "stylesheet" href="footer.css">
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+     background-color: #F7F8FF; 
+   transition: all .4s;
+   width: 100%;
+   height: 100%;
+   font-family: "Poppins", sans-serif;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #D776A7;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #4D00AF;
+  font-style: italic;
+  font-size:28px; 
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color:   #740A81;
+  font-size:20px;
+  font-family: cursive;
+  padding: 0 11px;
+  
+  
+}
+
+ul li {
+  padding: 5px;
+  margin: 0px;
+  z-index:1000;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #CDBECD;
+  z-index: 1000;
+}
+
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+.tab {
+margin-left:322px;
+padding:22px;
+
+}
+.head{
+font-size:62px;
+color: purple;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+.tab {
+margin-left:22px;
+padding:22px;
+
+}
+.head{
+font-size:38px;
+color: purple;
+}
+
+}
+	</style>
+  
+</head>
+
+<body>
+<header>
+<div id="brand"><img src="logoA.jpg" style="border-radius: 50%; object-fit: cover; position: relative; box-shadow: 0 0 20px #FEABC5;">GrammarMaster</div>
+
+   <nav>
+     <ul>
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+     </ul>
+   </nav>
+
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <ul class="mobile-menu">
+    <li><a href="bosternavbar.html">Home</a></li>
+    <li><a href="aboutus">Aboutus</a></li>
+   <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+        </ul>
+</div>
+</header>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div class="head"><u>Countable and Uncountable Nouns</u></div> 
+<p class="para">
+In English grammar, countable nouns are individual people, animals, places, things, or ideas which can be counted.
+ Uncountable nouns are not individual objects, so they cannot be counted. 
+ Here, we’ll take a look at countable and uncountable nouns and provide both 
+ countable noun examples and uncountable noun examples. Although the concept may seem challenging, 
+you’ll soon discover that these two different noun types are very easy to use.
+<br></p>
+
+<div class="heading">Countable Noun Examples</div>
+<p class="para">
+Anything that can be counted, whether singular – a dog, a house, a friend, etc. or plural – a few books, lots of oranges, etc.
+ is a countable noun. The following countable noun examples will help you to see the difference between countable and uncountable nouns.
+ Notice that singular verbs are used with singular countable nouns, while plural verbs are used with plural countable nouns.
+<br></p>
+<li>There are at least twenty Italian restaurants in Little Italy.</li>
+<li>Megan took a lot of photographs when she went to the Grand Canyon.</li>
+<li>Your book is on the kitchen table.</li>
+<li>How many candles are on that birthday cake?</li>
+<li>You have several paintings to study in art appreciation class.</li>
+<li>There’s a big brown dog running around the neighborhood.</li>
+
+<div class="heading">Uncountable Noun Examples</div>
+<p class="para">
+Anything that cannot be counted is an uncountable noun. Even though uncountable nouns are not individual objects,
+ they are always singular and one must always use singular verbs in conjunction with uncountable nouns. 
+ The following uncountable noun examples will help you to gain even more understanding of how
+ countable and uncountable nouns differ from one another. Notice that singular verbs are always used with uncountable nouns.
+<br></p>
+<li>There is no more water in the pond.</li>
+<li>Please help yourself to some cheese.</li>
+<li>I need to find information about Pulitzer Prize winners.</li>
+<li>You seem to have a high level of intelligence.</li>
+<li>Please take good care of your equipment.</li>
+<li>Let’s get rid of the garbage.</li>
+<br>
+<p class="para">
+Uncountable nouns can be paired with words expressing plural concept. Using these words can make your writing more specific.
+ Here are some examples of how to format interesting sentences with uncountable nouns.
+<br></p>
+<li> Garbage – There are nine bags of garbage on the curb.</li>
+
+<li>Water – Try to drink at least eight glasses of water each day.</li>
+
+<li> Advice – She gave me a useful piece of advice.</li>
+
+<li>Bread – Please buy a loaf of bread.</li>
+
+<li> Furniture – A couch is a piece of furniture.</li>
+
+<li> Equipment – A backhoe is an expensive piece of equipment.</li>
+
+<li> Cheese – Please bag ten slices of cheese for me.</li>
+<hr>
+<button style="width:300px; color:  ;  height: 74px; margin:22px; justify-content:center;"> <a href="candunquiz.html"><h1><b>free sample quiz</h1></b></a></button>
+ 
+<footer>
+   <div class="footer-cont">
+        <h3> GrammarMaster </h3>
+		   <p> GrammarMaster is a convenient, fun and flexible online 
+		   course which takes you from the most basic through to more complex elements 
+		   of UK English grammar. With tutor support, build the foundations to be an effective communicator .</p>
+		     <div class="socials">
+			     <li><a href="#"> <i class="fa fa-facebook">           </i></a></li>
+                 <li><a href="#"> <i class="fa fa-twitter">              </i></a></li>
+				 <li><a href="#"> <i class="fa fa-google-plus">       </i></a></li>
+				 <li><a href="#"> <i class="fa fa-youtube">            </i></a></li>
+				 <li><a href="#"> <i class="fa fa-linkedin-square"> </i></a></li>
+			 </div>
+        </div>     
+			 <div class="footer-bottom">
+			 <p>copyright & copy; 2021
+			 <a href="#">GrammarMaster</a>
+			 </p>
+			 
+			 
+			 <div class="footer-menu">
+				      <li><a href="bosternavbar.html">home</a></li>
+					  <li><a href="aboutus.html">About</a></li>
+					  <li><a href="contactus.html">Contact</a></li>
+					  <li><a href="pronunciation.html">pronunciation</a></li>
+				 			 
+   </div>
+   </div>
+ 
+</footer>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+	
+<script>
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>		  
+</body>
+</html>

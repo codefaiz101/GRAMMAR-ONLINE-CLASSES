@@ -1,0 +1,93 @@
+ .card {
+ display:flex;
+ display:inline-block;
+ justify-content:center;
+ align-self: center;
+ align-content: center;
+ align-items:center;
+ width:340px;
+ height:390px;
+ margin: 50px 50px;
+ background:rgb (0,87,128);
+ position:relative;
+ border-radius:20px;
+ cursor:position;
+ box-shadow:0 0 20px rgba(0,0,0,0.123);
+ background-color: #FFC2FF;
+ }
+
+.card img{
+position:absolute;
+width:350px;
+height:280px;
+border-radius:10px;
+padding:2em;
+}
+ .content{
+position:absolute;
+width:100%;
+bottom:0;
+height:122px;
+padding:0.4em 1.5em;
+font-size:28px;
+background:rgba(225,225,255,0);
+backdrop-filter:blur(10px);
+border-radius:10px;
+transform:scale(0.9);
+color: #003A3A;
+border:1px solid rgba(225,225,225,0.164);
+box-shadow:0 0 20px rgba(0,0,0,0.144);
+overflow:hidden;
+transition:all .4s;
+}
+
+.content p{
+font-size:0.8em;
+}
+
+.card:hover .content{
+height:250px;
+}
+.card button{
+width: 150px;
+height: 58px;
+padding :4px 22px;
+margin: 30px 39px;
+background: transparent;
+border: 1px solid black;
+outline: none;
+cursor: pointer;
+font-family: cursive;
+z-index: 1000;
+background-color: #5499C7;
+}
+
+.card:hover button{
+color: white;
+border: 1px solid white
+}
+.heading {
+ color: #500000;
+ font-size: 48px;
+ font-style: italic;
+ 
+}
+
+.para {
+ color: AA3254;
+ font-size: 30px;
+}
+
+#blink{
+   font-family: cursive;
+   font-size: 99px;
+   font-weight: bold;
+   color: #2d38be;
+   transition: 0.5s;
+   } 
+@media (max-width: 500px)  {
+.card{
+ margin: 0px 50px;
+}
+
+}

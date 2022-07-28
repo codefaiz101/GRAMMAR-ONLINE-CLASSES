@@ -1,0 +1,78 @@
+ * {
+  padding: 0;
+  margin: 0;
+ }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+ padding: 12px 42px;
+ margin: 60px 210px;
+ max-width: 200rem;
+}
+.para li{
+font-size:22px;
+padding:5px;
+}
+
+.heading {
+  color: #7D0552;
+ font-size: 40px;
+ font-style: italic;
+}
+
+.headings {
+ color: #7D0552;
+ margin-bottom:20px;
+ font-size: 44px;
+ font-style: italic;
+ }
+
+.wel{
+color: #7D0552;
+ font-size: 30px;
+ font-style: italic;
+ 
+}
+.para {
+ color:#690F25;
+ font-size: 26px;
+}
+
+.course {
+ color: #0000A5 ;
+ font-size: 79px;
+ font-family: cursive;
+margin-bottom:20px;
+padding:0px;
+}
+
+.uline {
+ color: #820A2C;
+}
+.pic {
+ width:100%;
+ margin: 2px 140px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+	margin: 12px 10px;
+	
+	} 
+   .pic {
+   width: 90px;
+   margin: 10PX 0;
+   }
+   .course {
+   font-size: 52px;
+   }
+   .heading {
+   font-size: 35px;
+   }
+   .para {
+   font-size:25px;
+   }
+}

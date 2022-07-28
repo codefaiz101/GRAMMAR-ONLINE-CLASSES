@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title>  Contact Us Form </title>
+    <link rel="stylesheet" href="contactus.css">
+	<link rel="stylesheet" href="css1.css">
+	<link rel="stylesheet" href="bstyles.css">
+	<link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+   
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<header>
+   <div id="brand"><img src="logoA.jpg" style="border-radius: 50%; object-fit: cover; position: relative; box-shadow: 0 0 20px #FEABC5;">GrammarMaster</a></div>
+   <nav>
+     <ul>
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+     </ul>
+   </nav>
+
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <ul class="mobile-menu">
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+      </ul>
+</div>
+</header>
+
+  
+  
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">BUDHWAR ,PETH.</div>
+          <div class="text-two">SATARA</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">9220440900</div>
+          <div class="text-two"></div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">GrammarMaster@gmail.com</div>
+          <div class="text-two">faizshaikh92701@gmail.com</div>
+          <div class="text-two">ELSASHAIKH@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p style="color:black;">If you have any work from me or any types of 
+		quries related to my tutorial, you can send me 
+		message from here. It's my pleasure to help you.</p>
+ <div class="alert"> YOUR MESSAGE HAS BEEN SENT </div>        
+            <form id="contactForm"> 
+               <p>
+               <div class="input-box">     
+                <input type="text" name="name" id="name" required placeholder="name" > 
+			   </div></p>
+
+			   <p>
+			   <div class="input-box">	   
+			    <input type="text" name="address" id="address" placeholder="address"> 
+               </div></p>
+
+                <p>			   
+			   <div class="input-box">
+			    <input type="email" name="email" id="email" required placeholder="email"> 
+               </div></p>
+			   
+			   <p>
+			   <div class="input-box">
+			    <input type="text" name="phone" id="phone" placeholder="phone number"> 
+               </div></p>
+			           
+			   <p class="full">
+			   <div class="input-box">
+        			   <textarea name="message" rows="5" id="message" placeholder="message">
+			   </textarea>
+			    </div></p>
+				        
+				<p class="full">
+				<button type="submit"> submit </button>
+			    </p>
+			</form>
+    </div>
+    </div>
+  </div>
+  
+<footer>
+   <div class="footer-cont">
+        <h3> GrammarMaster </h3>
+		   <p> GrammarMaster is a convenient, fun and flexible online 
+		   course which takes you from the most basic through to more complex elements 
+		   of UK English grammar. With tutor support, build the foundations to be an effective communicator .</p>
+		     <div class="socials">
+			     <li><a href="#"> <i class="fa fa-facebook">           </i></a></li>
+                 <li><a href="#"> <i class="fa fa-twitter">              </i></a></li>
+				 <li><a href="#"> <i class="fa fa-google-plus">       </i></a></li>
+				 <li><a href="#"> <i class="fa fa-youtube">            </i></a></li>
+				 <li><a href="#"> <i class="fa fa-linkedin-square"> </i></a></li>
+			 </div>
+        </div>     
+			 <div class="footer-bottom">
+			 <p>copyright & copy; 2021
+			 <a href="#">GrammarMaster</a>
+			 </p>
+			 
+			 
+			 <div class="footer-menu">
+				      <li><a href="bosternavbar.html">home</a></li>
+					  <li><a href="aboutus.html">About</a></li>
+					  <li><a href="contactus.html">Contact</a></li>
+					  <li><a href="pronunciation.html">pronunciation</a></li>
+				 			 
+   </div>
+   </div>
+</footer>
+  
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+
+<script>
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+<script type="text/javascript" src="contactus.js"></script>
+</body>
+
+</html>

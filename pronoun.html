@@ -1,0 +1,383 @@
+<html>
+<head>
+<title>pronoun</title>
+<link rel = "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="noun.css">
+	<link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+     background-color: #F7F8FF; 
+   transition: all .4s;
+   width: 100%;
+   height: 100%;
+   font-family: "Poppins", sans-serif;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.head{
+font-size:62px;
+color: purple;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #D776A7;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #4D00AF;
+  font-style: italic;
+  font-size:28px; 
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color:   #740A81;
+  font-size:20px;
+  font-family: cursive;
+  padding: 0 11px;
+  
+  
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 0px;
+  z-index:1000;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #CDBECD;
+  z-index: 1000;
+}
+
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+.tab {
+margin-left:22px;
+padding:22px;
+
+}
+
+}
+	</style>
+  
+
+  </head>
+  <body>
+<header>
+  
+<div id="brand"><img src="logoA.jpg" style="border-radius: 50%; object-fit: cover; position: relative; box-shadow: 0 0 20px #FEABC5;">GrammarMaster</div>
+  <nav>
+     <ul>
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+     </ul>
+   </nav>
+
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <ul class="mobile-menu">
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+    
+	</ul>
+</div>
+</header>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div class="container">
+     <img src="">
+       <div class="head"><U>Pronoun</U></div>
+           <p class="para">Pronouns are small words that take the place of a noun.
+		   Pronouns are words like: he , you , ours , themselves , some , each... we 
+		   can use a pronoun instead of a noun. if we didn't have pronouns, we 
+		   would have to repeat a whole lot of nouns. </p>
+   <div class="heading"><U>Personal Pronoun</U></div>
+           <li>number:singular (e.g:I)or plural (e.g:we)</li>
+		   <li>person: 1st person (e.g:I),2nd person(e.h:you)or 3rd person(e.g:he)</li>
+		   <li>gender:male(e.g:he),female(e.g:she)or neuter(e.g:it)</li>
+		   <li>case:subject(e.g:we)or object(e.g:us)</li>
+		 
+		   <p class="para">We use personal pronouns in place of the person or people that we are talking about.
+		   My name is josef but when i am talking about myself I almost always use"I" or "me" , not "josef". 
+		   when i am talking direct to you , I almost always use "you" , not your name. when I am talking about another person,
+		   say john, I may start with "john" but then use "he' or "him".And so on.</p>
+		   <div class="heading"><U>Demonstrative Pronoun</U></div>
+		   <p class="para"> A demonstrative pronoun represents a thing or things: </p>
+		     <li>near in distance or time (this,these)</li>
+			 <li>far in distance or time(that,those)</li>
+		    <p class="para">
+			   here are some examples with demonstrative pronoun , followed by an illustration:</p>
+			       <li>This tastes good.</li>
+				   <li>Have you seen this?</li>
+		          <li>these are bad times.</li>
+				  <li> Do you like these?</li>	  <br>
+				 <li>That is beutiful.</li>
+		         <li>Look at that! </li>
+		         <li>Those were the days!</li>
+				 <li>can you see those?</li>		 <br>
+				 <li>This is heavier than that.</li>
+				 <li>These are bigger than those.</li>
+				 
+ <div class="heading"><U>Possessive Pronoun</U></div>
+		   <p class="para">a pronoun indicating possession, for example mine, yours,here,theirs.<br>
+		   Possessive pronoun include my, mine, our, ours, its, her, hers,their, theirs, your and yours.<br>
+            These are all words that demonstrate ownership. if the book belong to me, it is mine.
+           if the book belongs to her, then it is here.			 </p>
+		         <li>The cat is yours.</li>
+				   <li>The kids are yours and mine.</li>
+		          <li>The money was really theirs for the talking.</li>
+				  <li>we shall finally have what is rightfully ours. </li>
+                   <li>Their mother gets well with yours.</li>
+				   <li>What's mine is yours, my friend.</li>
+				   <li>The bag is theirs</li>   
+ <div class="heading"><U>Interrogative Pronouns</U></div>
+ <p class="para"> We use interrogative pronoun to ask quetions. The interrogative pronoun represents the thing that we don't know .			
+		There are four main interrogative pronoun:who, whom, what, which</p>
+            <div class="heading"><U>Reflexive Pronouns</U></div>
+			<p class="para">We use a reflexive pronoun when we want to refer back to the subject of the sentense or clause. <br>
+			Reflexive pronouns end in "-self" (singular) or "-selves" (plural). </p>
+			<p class="para"> The nine English <B>Reflexive Pronouns</B>are <i>myself, yourself, himself, herself, oneself, itself, ourselves,
+			yourselves, and themselves.</i></p>
+ <div class="heading"><U>Reciprocal Pronouns</U></div>
+        <p class="para">We use reciprocal pronoun when each of two or more subjects is acting in the same way towards the other.
+		For example, A is talking to B, and B is talking to A. so we say :<br>
+		 A and B are talking to each other.</p>
+
+            <p class="para">When to use reciprocal pronoun</p>
+            <li>There must be two or more people, things or groups reciprocal the action.</li>			
+			<li>They must be performing the same action.</li>
+			<li>Reciprocal pronouns can not be used with i, you, he, she, and it because three must be multiple nouns or pronouna to reciprocate the action</li>
+			<div class="heading">Each Other:</div>
+			<p class="para"> when the antecedent of a Reciprocal Pronoun refers to two things in a sentence, we use each other.</p>
+			 
+			 <B>Example Sentences</B>
+			   <li>The two brothers always cooperate with <B>each other</B>.</li>
+			   <li>kiran and karuna helped<B> each other</B> in the exam </li>
+			   <li>Froends are kind to<B> each other</B> in case of need</li>
+			   <li>The wife and husband love <B>each other</B>.</li>
+			   <br>
+			<div class="heading">One Another:</div>
+			<p class="para"> When the antecedent of a reciprocal Pronoun refers to more than two things in asentence, we use one another</p>
+            <B>Example Sentences</B>			
+			 <li>The family members always quarrel with <B>One another</B></li>
+			<li>The cpmpany directors fought <B>one another</B> </li>
+			<li>Froends are kind to <B>one other</B>in casse of need</li>
+			<li>The employees started blaming <B>one another</B> </li>
+			
+ <div class="heading"><U>Indefinite Pronouns</U></div>
+      <p class="para">An indefinite pronoun does not refer to any specific person, thing or amount. 
+	  it is vague and "not definite". some typical indefinite pronoun are: </p>
+	      <li>all, another, any, anybody/anyone, anything, each, everybody/everything, few, many, 
+		  nobody, none, one, several, some, some, somebody/someone.</li>
+		  <div class="heading">Example sentence:</div>
+         <li><B>all:</B> From my point of view,<U> all </U>are equal.</li>		
+		 <li><B>anybody:</B><U> Anybody </U>can dance on the floor of dancing.</li>
+		 <li><B>every:</B>i heartily congratulate<U> every</U> player on this team.</li>
+		 <li><B>anything:</B>i was unable to hear <U>anything</U> last night after the blast.</li>
+		 <li><B>several</B><U>several</U>people came to the stadium to see a match.</li>
+		 <li><B>each</B><U>each</U>of them purchased chocolate from my shop.</li>
+		 <li><B>most:</B><U>Most</U>of the student are participating in cultural events.</li>
+		 <li><B>nothing:</B><U>Nothing</U>is left in front of me to tell you the truth.</li>
+		 <li><B>no one:</B><U>No one</U>will help you in this situation.</li>
+		 <li><B>everyone:</B><U>Everyone</U>knows about that incident.</li>
+		 <li><B>both:</B>Get <U>both</U> out of my classroom.</li>       
+ <div class="heading"><U>Relative Pronouns</U></div>
+        <p class="para">A relative pronoun is a pronoun that  introduce a relative clause.
+		it is called a "relative" pronoun because it "relates" to the word that its relative clause modifies.</p>
+        <p class="para">For example: The person <b> who</b> phoned me last night is my teacher.<br><br>
+		     There are five basic relative pronouns: <b>who, whom, whose, which, that</b> <br><br>
+   			 <b>who</b> and <b>whom</b> are generally only for people. <b>whose </b>is for possession.
+			 <b>which</b> is for things. <b>That</b> can be used for things and people only in defining relative clauses.</p>		
+ </div>
+ 
+<button style="width:300px; color:  ;  height: 74px; margin:50px;"> <a href="pronounquiz.html"><h1><b>Free Sample Quiz</h1></b></a></button>
+<footer>
+   <div class="footer-cont">
+        <h3> GrammarMaster </h3>
+		   <p> GrammarMaster is a convenient, fun and flexible online 
+		   course which takes you from the most basic through to more complex elements 
+		   of UK English grammar. With tutor support, build the foundations to be an effective communicator .</p>
+		     <div class="socials">
+			     <li><a href="#"> <i class="fa fa-facebook">           </i></a></li>
+                 <li><a href="#"> <i class="fa fa-twitter">              </i></a></li>
+				 <li><a href="#"> <i class="fa fa-google-plus">       </i></a></li>
+				 <li><a href="#"> <i class="fa fa-youtube">            </i></a></li>
+				 <li><a href="#"> <i class="fa fa-linkedin-square"> </i></a></li>
+			 </div>
+        </div>     
+			 <div class="footer-bottom">
+			 <p>copyright & copy; 2021
+			 <a href="#">GrammarMaster</a>
+			 </p>
+			 
+			 
+			 <div class="footer-menu">
+				      <li><a href="bosternavbar.html">home</a></li>
+					  <li><a href="aboutus.html">About</a></li>
+					  <li><a href="contactus.html">Contact</a></li>
+					  <li><a href="pronunciation.html">pronunciation</a></li>
+				 			 
+   </div>
+   </div>
+</footer>
+  
+
+<script>
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+ 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+ </body>
+</html>
+
+
+
+

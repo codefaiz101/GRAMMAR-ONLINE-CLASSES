@@ -1,0 +1,421 @@
+<html>
+<head>
+<title>gerund</title>
+<link rel = "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="noun.css">
+<link rel = "stylesheet" href="footer.css">
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+     background-color: #F7F8FF; 
+   transition: all .4s;
+   width: 100%;
+   height: 100%;
+   font-family: "Poppins", sans-serif;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+.head{
+font-size:62px;
+color: purple;
+}
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #D776A7;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #4D00AF;
+  font-style: italic;
+  font-size:28px; 
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color:   #740A81;
+  font-size:20px;
+  font-family: cursive;
+  padding: 0 11px;
+  
+  
+}
+
+ul li {
+  padding: 5px;
+  margin: 0px;
+  z-index:1000;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #CDBECD;
+  z-index: 1000;
+}
+
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+.parar {
+ padding: 6px 6px;
+ margin: 10px 20px;
+ font-family: cursive;
+  font-size: 25px;
+}
+
+
+.tab {
+margin-left:322px;
+padding:22px;
+
+}
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+
+.tab {
+margin-left:22px;
+padding:22px;
+
+}
+
+.head{
+font-size:32px;
+color: purple;
+}
+}
+	</style>
+  
+</head>
+
+<header>
+ <div id="brand"><img src="logoA.jpg" style="border-radius: 50%; object-fit: cover; position: relative; box-shadow: 0 0 20px #FEABC5;">GrammarMaster</div>
+  
+   <nav>
+     <ul>
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+     </ul>
+   </nav>
+
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <ul class="mobile-menu">
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+    
+	</ul>
+</div>
+</header>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div class="head"> wh questions</div>
+    <p class="parar">
+	The WH- QUESTIONS are questions formed with a question word, such as who, whom, whose, what, which, when, where, why or how.
+	These question words are also called INTERROGATIVE WORDS.
+</p>
+
+<p class="heading"><u>Wh- questions</u> can be categorized according to the purpose they serve for an asker. Basically, there are
+ three types:
+</p>
+
+<li>information questions,</li>
+<li>repeat please questions, and</li>
+<li>elaborate please questions.</li>
+<p class="para">	
+	Information wh- questions are the basic type.
+They are used to request information that has not been previously mentioned, and they take the different forms considered thus far.
+</p>
+
+<p class="parar">
+Unlike yes/no questions, wh- information questions always contain a presupposition. For instance,
+ when we ask the question What did John do? we presume that John did in fact do something.
+</p>
+
+<p class="parar">
+Question:	1) How did they do it?	<br>
+Presumed Information:They did it somehow.<br>
+</p>
+
+<p class="parar">
+ Question: 2) Where did John go?	<br>
+ Presumed Information: John went somewhere.
+ <br><br>
+ </p>
+ 
+ <p class="parar">
+Question: 3) Whose book was stolen?	<br>
+Presumed Information: Someone’s book was stolen.
+<br><br>
+</p>
+
+<p class="parar">
+Question:4) What has he done?<br>
+ Presumed Information: He has done something.
+ <br><br>
+ </p>
+ 
+ <p class="parar">
+Question:5) Who is doing it?<br>
+Presumed Information:	Someone is doing it.
+<br><br>
+</p>
+
+<p class="parar">
+Question words: What<br>
+Usages:Used to ask about things<br>
+Examples: - What are you doing?<br>
+- What do you think about the movie?
+<br><br>
+</p>
+
+<p class="parar">
+Question words:When<br>
+Usages:Used to ask about time<br>
+Examples:
+- When will the meeting start?
+<br>
+ - When are you leaving?
+<br><br>
+</p>
+
+<p class="parar">
+Question words:Where<br>
+Usages:Used to ask about places<br>
+Examples:<br>
+- Where’s my bag?
+- Where do you live?
+<br><br>
+</p>
+
+<p class="parar">
+Question words:Who<br>
+Usages: Used to ask about people<br>
+Examples:<br>
+- Who do you love the most in your family?<br>
+- Who told you that story?
+<br><br>
+</p>
+
+<p class="parar">
+Question words:Whom<br>
+Usages: Used to ask about people (object of verb)<br>
+Examples:<br>
+- Whom did you see in the morning?  I saw Mr. Mark, my English teacher.
+<br>
+- Whom was Jim talking to? He was talking to Jack, his new roommate.<br>
+<br><br>
+</p>
+
+<p class="parar">
+Question words:Which <br>
+Usages: Used to ask about choices<br>
+Examples:<br>
+- Which one do you choose? The left or right?<br>
+- Of all the drinks in the menu, which one would you like?
+<br><br>
+</p>
+
+<p class="parar">
+Question words:Whose<br>
+Usages: Used to ask about possession<br>
+Examples:<br>
+- Whose pencil is this? Is it yours?
+- Whose books are these?<br>
+<br><br>
+</p>
+
+<p class="parar">
+Question words:Why<br>
+Usages: Used to ask about reasons/ causes<br>
+Examples:<br>
+- Why did it happen? I didn’t understand.
+<br>
+- Why is he crying?
+<br><br>
+</p>
+
+<p class="parar">
+Question words:How<br>
+Usages: Used to ask about manner/ process<br>
+Examples:<br>
+- How can you explain this problem? Please tell us.
+<br>
+- How can you get here?
+</p>
+
+<hr><br>
+<button style="width:300px; color:  ;  height: 74px; margin:22px;"> <a href="whqquiz.html"><h1><b>free Sample Quiz</h1></b></a></button>
+<br>
+ <footer>
+   <div class="footer-cont">
+        <h3> GrammarMaster </h3>
+		   <p> GrammarMaster is a convenient, fun and flexible online 
+		   course which takes you from the most basic through to more complex elements 
+		   of UK English grammar. With tutor support, build the foundations to be an effective communicator .</p>
+		     <div class="socials">
+			     <li><a href="#"> <i class="fa fa-facebook">           </i></a></li>
+                 <li><a href="#"> <i class="fa fa-twitter">              </i></a></li>
+				 <li><a href="#"> <i class="fa fa-google-plus">       </i></a></li>
+				 <li><a href="#"> <i class="fa fa-youtube">            </i></a></li>
+				 <li><a href="#"> <i class="fa fa-linkedin-square"> </i></a></li>
+			 </div>
+        </div>     
+			 <div class="footer-bottom">
+			 <p>copyright & copy; 2021
+			 <a href="#">GrammarMaster</a>
+			 </p>
+			 
+			 
+			 <div class="footer-menu">
+			     
+				      <li><a href="bosternavbar.html">home</a></li>
+					  <li><a href="aboutus.html">About</a></li>
+					  <li><a href="contactus.html">Contact</a></li>
+					  <li><a href="pronunciation.html">pronunciation</a></li>
+				 			 
+   </div>
+   </div>
+</footer>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<html>
+<head><title>types of sentences</title>
+<link rel = "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="noun.css">
+<link rel = "stylesheet" href="footer.css">
+
+    <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+     background-color: #F7F8FF; 
+   transition: all .4s;
+   width: 100%;
+   height: 100%;
+   font-family: "Poppins", sans-serif;
+}
+.head{
+font-size:62px;
+color: purple;
+}
+
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #D776A7;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #4D00AF;
+  font-style: italic;
+  font-size:28px; 
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color:   #740A81;
+  font-size:20px;
+  font-family: cursive;
+  padding: 0 11px;
+  
+  
+}
+
+ul li {
+  padding: 5px;
+  margin: 0px;
+  z-index:1000;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #CDBECD;
+  z-index: 1000;
+}
+
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+.tab {
+margin-left:322px;
+padding:22px;
+
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+.tab {
+margin-left:22px;
+padding:22px;
+
+}
+
+}
+	</style>
+  
+
+  </head>
+  <body>
+<header>
+<div id="brand"><img src="logoA.jpg" style="border-radius: 50%; object-fit: cover; position: relative; box-shadow: 0 0 20px #FEABC5;">GrammarMaster</div>
+
+      <nav>
+     <ul>
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+     </ul>
+   </nav>
+
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <ul class="mobile-menu">
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+    
+	</ul>
+</div>
+</header>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div class="container">
+<div class="head"><u>Types of sentences </u></div> 
+<p class="para">
+
+There are four types of sentences in the English language: declarative, exclamatory, imperative, and interrogatory.
+ Each sentence type serves a different purpose. 
+Understanding the different sentence types and how to use them will help improve your writing skills.
+<br>
+A complete sentence is a group of words that conveys a complete idea. 
+Complete sentences must have at least one subject and predicate, the necessary pieces of an independent clause.
+ A subject is the first unit of information and contains a noun;
+ the predicate expands upon that information and contains a verb or phrase. 
+ Complete sentences start with a capital letter, and they end with a punctuation mark such as a period, 
+ exclamation point, or question mark.
+
+</p>
+
+<div class="heading">4 Types of Sentences in the English Language</div>
+<p class="para">In the English language, there are four different kinds of sentences. 
+Sentence variety helps make your writing more interesting and improves readability.
+</p>
+<div class="heading">Declarative sentences:</div> 
+<p class="para">In English grammar, a declarative sentence is a sentence that makes a statement, provides a fact, 
+offers an explanation, or conveys information. These types of sentences are also known as declarative statements.
+ A declarative sentence is the most common type of sentence in the English language.
+ Sentences written in the declarative form are written in the present tense and usually end with a period. 
+ Normally, the subject comes before the verb.
+</p>
+<div class="heading">Exclamatory sentences: </div>
+<p class="para">An exclamatory sentence, also known as an exclamation sentence or an exclamative clause, 
+is a statement that expresses strong emotion. Typically, in English grammar, exclamatory sentences end with an 
+exclamation mark—also called an exclamation point. While exclamatory sentences are appropriate in casual settings,
+ avoid using exclamatory sentences in all types of formal writing, including academic writing.
+</p>
+<div class="heading">Imperative sentences:</div> 
+<p class="para">An imperative sentence is a sentence that expresses a direct
+ command, request, invitation, warning, or instruction. Imperative sentences do not have a subject;
+ instead, a directive is given to an implied second person. For example, the sentence, “Wash the dinner plates,” 
+commands the implied subject to wash the dishes.
+</p>
+<div class="head">Interrogative sentences:</div>
+ <p class="para">An interrogative sentence is a sentence that asks a question.
+ A sentence written in the interrogative form can be direct or indirect, begin with or without pronouns,
+ and feature yes/no interrogatives, alternative questions, or tag questions. 
+ Interrogative sentences often start with interrogative pronouns and end with a question mark. 
+ Question words, typically “wh” words, include “who,” “what,” “when,” “where,” “why,” “which,” “whose,” and “whom.”
+ You can also use auxiliary verbs in interrogative sentences, such as “Did she mean to sound so angry?” Here,
+ “did” is an auxiliary verb (or helping verb), 
+transforming the sentence “she meant to sound so angry” into a question.
+</p>
+<div class="heading">4 Types of Sentence Structures</div>
+
+<p class=para">In the English language, there are four different types of sentence structures:</div>
+ simple, compound, complex, and compound-complex.
+ </p>
+<br><br>
+
+<div class="heading">Simple sentences:</div>
+ <p class="para">A simple sentence contains a subject (a person or thing performing an action)
+ and a predicate (a verb or verbal phrase that describes the action) and expresses a complete thought as an independent clause.
+ Simple sentences do not contain dependent or subordinate clauses.
+</p>
+<div class="heading">Compound sentences:</div>
+<p class="para"> A compound sentence is a sentence that contains two or more independent 
+clauses joined by either a linking word, such as a conjunction, or a semicolon. Put simply,
+ a compound sentence links together two simple sentences, which are sentences with one independent clause.
+</p>
+<div class="heading">Complex sentences:</div>
+ <p class="para">A complex sentence is a sentence with one independent 
+clause, also known as the main clause, and one or more dependent clauses, known as subordinate clauses.
+ When the dependent clause is first in the sentence, a comma will connect the clauses.
+ Other complex sentences link the independent and dependent clauses with 
+subordinating conjunctions like “when,” “how,” and “if.”
+</p>
+<div class="heading">Compound-complex sentences:</div>
+<p class="para"> A compound-complex sentence contains at least three clauses—two
+ independent clauses and one or more dependent clauses—which equates to three sets of subjects and verbs.
+ This type of sentence is a combination of a compound sentence with a complex sentence.
+ Compound-complex sentences will typically be joined together with a coordinating
+ conjunction as you would use in a compound sentence, 
+with the comma placed immediately before the coordinating conjunction.
+</p>
+<div>
+
+  <hr>
+
+<button style="width:300px; color:  ;  height: 74px; margin:22px; justify-content:center;"> <a href="typessentquiz.html"><h1><b>free sample quiz</h1></b></a></button>
+
+<footer>
+   <div class="footer-cont">
+        <h3> GrammarMaster </h3>
+		   <p> GrammarMaster is a convenient, fun and flexible online 
+		   course which takes you from the most basic through to more complex elements 
+		   of UK English grammar. With tutor support, build the foundations to be an effective communicator .</p>
+		     <div class="socials">
+			     <li><a href="#"> <i class="fa fa-facebook">           </i></a></li>
+                 <li><a href="#"> <i class="fa fa-twitter">              </i></a></li>
+				 <li><a href="#"> <i class="fa fa-google-plus">       </i></a></li>
+				 <li><a href="#"> <i class="fa fa-youtube">            </i></a></li>
+				 <li><a href="#"> <i class="fa fa-linkedin-square"> </i></a></li>
+			 </div>
+        </div>     
+			 <div class="footer-bottom">
+			 <p>copyright & copy; 2021
+			 <a href="#">GrammarMaster</a>
+			 </p>
+			 
+			 
+			 <div class="footer-menu">
+				      <li><a href="bosternavbar.html">home</a></li>
+					  <li><a href="aboutus.html">About</a></li>
+					  <li><a href="contactus.html">Contact</a></li>
+					  <li><a href="pronunciation.html">pronunciation</a></li>
+				 			 
+   </div>
+   </div>
+</footer>
+
+ 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+	
+<script>
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+</body>
+</html>

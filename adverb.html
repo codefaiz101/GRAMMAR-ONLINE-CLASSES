@@ -1,0 +1,492 @@
+<html>
+<head>
+<title>adverb</title>
+<link rel = "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="noun.css">
+<link rel = "stylesheet" href="noun.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+     background-color: #F7F8FF; 
+   transition: all .4s;
+   width: 100%;
+   height: 100%;
+   font-family: "Poppins", sans-serif;
+}
+.head{
+font-size:62px;
+color: purple;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #D776A7;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #4D00AF;
+  font-style: italic;
+  font-size:28px; 
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color:   #740A81;
+  font-size:20px;
+  font-family: cursive;
+  padding: 0 11px;
+  
+  
+}
+
+ul li {
+  padding: 5px;
+  margin:0px;
+  z-index:1000;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #CDBECD;
+  z-index: 1000;
+}
+
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+.tab {
+margin: 12px 322px;
+padding:0px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+.tab {
+margin-left:22px;
+padding:2px;
+
+}
+.head{
+font-size:32px;
+color: purple;
+}
+
+}
+
+footer{
+ position: relative;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background: #111;
+ height: auto;
+
+ padding-top: 40px;
+ color: #fff;
+  
+}
+
+
+.footer-cont {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+
+.footer-cont h3 {
+    font-size: 2.1rem;
+	font-weight: 500;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+
+.footer-cont p {
+  max-width: 580px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 17px;
+  color: #cacdd2;
+}
+
+.socials{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+   text-decoration: none;
+   color: #fff;
+   border: 1.1px solid white;
+   padding: 5px;
+   border-radius: 50%;
+}
+
+.socials a i {
+   font-size: 1.1rem;
+    width: 22px;
+	height:25px;
+	transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+   background: #000;
+   width: 100vm;
+   padding: 10px;
+   padding-bottom: 40px;
+   padding-left: 40px;
+   text-align: center;
+}
+
+.footer-bottom p{
+  float: left;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform:capitalize;
+  
+}
+
+.footer-bottom p a{
+   color: #44bae8;
+   font-size: 16px;
+   text-decoration: none;
+}
+
+.footer-bottom span {
+ text-transform: uppercase;
+ opacity: .4;
+ font-weight: 200;
+}
+
+.footer-menu {
+  float: right;
+}
+
+.footer-menu {
+  display: flex;
+}
+
+.footer-menu  li{
+  padding-right: 37px;
+  display: block;
+}
+
+.footer-menu  li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+  color: #27bcda;
+
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+@media (max-width: 500px)  {
+       .footer-menu {
+	    display: flex;
+		margin-top: 0px;
+		margin-bottom: 40px;
+		
+	   }
+    .footer-bottom{
+	}
+}
+	</style>
+  
+</head>
+
+<body>
+<header>
+   <div id="brand"><img src="logoA.jpg" style="border-radius: 50%; object-fit: cover; position: relative; box-shadow: 0 0 20px #FEABC5;">GrammarMaster</div>
+
+   <nav>
+     <ul>
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+     </ul>
+   </nav>
+
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <ul class="mobile-menu">
+    <li><a href="bosternavbar.html">Home</a></li>
+    <li><a href="aboutus">Aboutus</a></li>
+   <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="pronunciation.html" >pronunciation</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+        </ul>
+</div>
+</header>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div class="container">
+ 	   <div class="head">Adverb</div>
+	         <p class="para">adverb (noun): a word that modifies a verb, an adjective or another adverb, expressing manner, place, time or degree; 
+			 a word that can modify a phrase, clause or sentence<br> <br>
+			 
+			 An adverb is a word that tells us more about a verb. It "qualifies" or "modifies" a verb (The man ran quickly). In the following examples,
+			 the adverb is in bold and the verb that it modifies is in italics.</p>
+        
+<li>John speaks loudly. (How does John speak?)</li>
+<li>Afterwards she smoked a cigarette. (When did she smoke?)</li>
+<li>Mary lives locally. (Where does Mary live?)</li>
+<br><br>
+<p class="para">But adverbs can also modify adjectives (Tara is really beautiful), or even other adverbs (It works very well). 
+<u>Look at these examples:</u><br><br></p>
+<p class="para">
+<li>Modify an adjective:</li>
+- He is really handsome. (How handsome is he?)<br>
+- That was extremely kind of you.<br>
+<li>Modify another adverb:</li>
+- She drives incredibly slowly. (How slowly does she drive?)<br>
+- He drives extremely fast.<br>
+<br>
+</p>
+<p class="para">
+We make many adverbs by adding -ly to an adjective, for example:<br><br>
+
+<li>quick (adjective) > quickly (adverb)</li>
+<li>careful (adjective) > carefully (adverb)</li>
+<li>beautiful (adjective) > beautifully (adverb)</li>
+</p>
+<br><br>
+<div class="heading">Kinds of Adverbs</div>
+<p class="para">
+Here you can see the basic kinds of adverbs.
+<br></p>
+<div class="heading">Adverbs of Manner</div>
+<p class="para">
+Adverbs of Manner tell us the manner or way in which something happens. 
+They answer the question "how?". Adverbs of Manner mainly modify verbs.
+</p>
+<li>He speaks slowly. (How does he speak?)</li>
+<li>They helped us cheerfully. (How did they help us?)</li>
+<li>James Bond drives his cars fast. (How does James Bond drive his cars?)</li>
+<br>
+<div class="heading">Adverbs of Place</div>
+<p class="para">
+Adverbs of Place tell us the place where something happens. They answer the question "where?". 
+Adverbs of Place mainly modify verbs. 
+<br></p>
+<li>Please sit here. (Where should I sit?)</li>
+<li>They looked everywhere. (Where did they look?)</li>
+<li>Two cars were parked outside. (Where were two cars parked?)</li>
+<br>
+<div class="heading">Adverbs of Time</div>
+<p class="para">
+Adverbs of Time tell us something about the time that something happens. Adverbs of Time mainly modify verbs.
+<br>
+They can answer the question "when?":<br>
+</p>
+<li>He came yesterday. (When did he come?)</li>
+<li>I want it now. (When do I want it?)</li>
+<br>
+<p class="para">
+Or they can answer the question "how often?" (frequency):
+</p>
+<li>They deliver the newspaper daily. (How often do they deliver the newspaper?)</li>
+<li>We sometimes watch a movie. (How often do we watch a movie?)</li>
+<br>
+<div class="heading">Adverbs of Degree</div>
+<p class="para">
+Adverbs of Degree tell us the degree or extent to which something happens.
+ They answer the question "how much?" or "to what degree?". Adverbs of Degree can modify verbs, adjectives and other adverbs.
+<br></p>
+<li>She entirely agrees with him. (How much does she agree with him?)</li>
+<li>Mary is very beautiful. (To what degree is Mary beautiful? How beautiful is Mary?)</li>
+<li>He drove quite dangerously. (To what degree did he drive dangerously? How dangerously did he drive?)</li>
+</p>
+
+<hr><br>
+<button style="width:340px; color:  ;  height: 74px; margin:22px;"><a href="adverbquiz.html"><h1><b>Free  Sample  Quiz</h1></b></a></button>
+<br>
+
+<footer>
+   <div class="footer-cont">
+        <h3> GrammarMaster </h3>
+		   <p> GrammarMaster is a convenient, fun and flexible online 
+		   course which takes you from the most basic through to more complex elements 
+		   of UK English grammar. With tutor support, build the foundations to be an effective communicator .</p>
+		     <div class="socials">
+			     <li><a href="#"> <i class="fa fa-facebook">           </i></a></li>
+                 <li><a href="#"> <i class="fa fa-twitter">              </i></a></li>
+				 <li><a href="#"> <i class="fa fa-google-plus">       </i></a></li>
+				 <li><a href="#"> <i class="fa fa-youtube">            </i></a></li>
+				 <li><a href="#"> <i class="fa fa-linkedin-square"> </i></a></li>
+			 </div>
+        </div>     
+			 <div class="footer-bottom">
+			 <p>copyright & copy; 2021
+			 <a href="#">GrammarMaster</a>
+			 </p>
+			 
+			 
+			 <div class="footer-menu">
+			     
+				      <li><a href="bosternavbar.html">home</a></li>
+					  <li><a href="aboutus.html">About</a></li>
+					  <li><a href="contactus.html">Contact</a></li>
+					  <li><a href="pronunciation.html">pronunciation</a></li>
+				 			 
+   </div>
+   </div>
+</footer>
+  
+<script>
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+</html>

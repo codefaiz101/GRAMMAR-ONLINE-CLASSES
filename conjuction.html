@@ -1,0 +1,398 @@
+<html>
+<head>
+<title>Conjuction</title>
+<link rel = "stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href="noun.css">
+<link rel = "stylesheet" href="footer.css">
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+     background-color: #F7F8FF; 
+   transition: all .4s;
+   width: 100%;
+   height: 100%;
+   font-family: "Poppins", sans-serif;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+.head{
+font-size:62px;
+color: purple;
+}
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: #D776A7;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#brand a {
+  color: #4D00AF;
+  font-style: italic;
+  font-size:28px; 
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color:   #740A81;
+  font-size:20px;
+  font-family: cursive;
+  padding: 0 11px;
+  
+  
+}
+
+ul li {
+  padding: 5px;
+  margin:0px;
+  z-index:1000;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #CDBECD;
+  z-index: 1000;
+}
+
+
+
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+
+.head{
+font-size:32px;
+color: purple;
+}
+}
+	</style>
+  
+</head>
+
+<body>
+<header>
+ <div id="brand"><img src="logoA.jpg" style="border-radius: 50%; object-fit: cover; position: relative; box-shadow: 0 0 20px #FEABC5;">GrammarMaster</div>
+   <nav>
+     <ul>
+       <li><a href="bosternavbar.html">Home</a></li>
+       <li><a href="aboutus.html">About_us</a></li>
+       <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="feedback.html" >Feedback</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+     </ul>
+   </nav>
+
+<div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  <ul class="mobile-menu">
+    <li><a href="bosternavbar.html">Home</a></li>
+    <li><a href="aboutus">Aboutus</a></li>
+   <li><a href="2page.html">Basic</a></li>
+       <li><a href="3page.html" >Intermediate</a></li>
+       <li><a href="5page.html">Advance</a></li>
+       <li><a href="feedback.html" >Feedback</a></li>
+       <li><a href="contactus.html">Contact_us</a></li>
+        </ul>
+</div>
+</header>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+<div class="head"> Conjuction </div>
+<p class="para"> A conjunction is a word like and, but, although, because. Conjunctions have an important function because they join other words and phrases together.
+ Without conjunctions, we could only make very, very simple sentences.</p>
+
+<div class="heading"> What is a Conjunction? </div>
+<p class="para"><b>Conjunction (noun)</b>: a part-of-speech that joins together words, phrases and clauses </p>
+<p class="para"> A <b>conjunction</b> is one of the 9 <b>parts of speech.</b></p>
+<p class="para">A conjunction is a word that connects two parts of a sentence. The very common word <b>and</b> is a conjunction. Look at how it joins these words, phrases and clauses:</p>
+<li>bread <b>and</b> butter (joins two words)</li>
+<li>up the stairs <b>and</b> along the corridor (joins two phrases)</li>
+<li>Ram likes tea <b>and</b> Anthony likes coffee (joins two clauses)</li>
+<p class="para"> Here are some other common conjunctions:</p>
+  <li> and, but, or, nor, for, yet, so</li>
+  <li> although, because, since, unless </li>
+  <li>And here are some more example sentences:</li>
+<li> Jack <b>and</b> Jill went up the hill.</li>
+<li> The water was warm, <b>but</b> I didn't go swimming.</li>
+<li> I went swimming <b>although</b> it was cold.</li>
+<div class="heading">Conjunction Form </div>
+<p class="para">There is no special form for conjunctions. Many are short, simple words (but, for, since); and others are two or three words (so that, in order that, as long as).</p>
+<br>
+<div class="heading">Introduction to Conjunctions</div>
+<p class="para">We can consider conjunctions from three aspects.</p>
+
+<div class="heading"> 1. What do Conjunctions Do? </div>
+<p class="para"><b>Conjunctions have two basic functions or "jobs": </b></p>
+
+<p class="para"><b>Coordinating conjunctions</b> are used to join two parts of a sentence that are grammatically equal. The two parts may be single words or clauses, for example: </p>
+<li>Jack <b>and</b> Jill went up the hill.</li>
+<li>The water was warm, <b>but</b> I didn't go swimming.</li>
+
+<p class="para"><b>Subordinating conjunctions</b> are used to join a subordinate dependent clause to a main clause, for example: </p>
+<li> I went swimming <b>although</b> it was cold.</li>
+
+<p class="para">Here are some example conjunctions:</p>
+
+<table border="3">
+<tr>
+<td><b>Coordinating conjunctions</b></td>
+<td><b>Subordinating conjunction</b></td>
+</tr>
+<tr>
+<td>and, but, or, nor, for, yet, so</td>
+<td>although, because, since, unless</td>
+</tr>
+</table>
+<br><br>
+
+<div class="heading">2. What do Conjunctions Look Like? </div>
+<p class="para"><b>Conjunctions have three basic formats:</b><p>
+
+<div class="heading">a.single word</div>
+<li> for example: and, but, because, although</li>
+<div class="heading">b.compound</div> <p class="para">(often ending with as or that)</p>
+<li>for example: provided that, as long as, in order that</li>
+<div class="heading">correlative (surrounding an adverb or adjective)</div>
+<li>for example: so...that</li>
+<br><br>
+
+<div class="heading">3. Where do Conjunctions Go?</div>
+<p class=""para ><b>Coordinating conjunctions</b> always come <b>between</b> the words or clauses that they join.</p>
+<p class="para"><b>Subordinating conjunctions</b> usually come at the <b>beginning</b> of the subordinate clause.</p>
+<br>
+
+<div class="heading">Coordinating Conjunctions</div>
+<p class="para">A <b>coordinating conjunction</b> joins parts of a sentence (for example words or independent clauses) that are grammatically equal or similar.
+A coordinating conjunction shows that the elements it joins are similar in importance and structure:</p>
+
+<p class="para">There are seven coordinating conjunctions, and they are all short words of only two or three letters:</p>
+
+<li>and, but, or, nor, for, yet, so</li>
+<p class="para">Look at these examples - the two elements that the coordinating conjunction joins are shown in square brackets [ ]:</p>
+
+<li>I like [tea] <b>and</b> [coffee].</li>
+<li>[Ram likes tea], <b>but</b> [Anthony likes coffee].</li>
+<p class="para"><b>Coordinating conjunctions</b> always come <b>between</b> the words or clauses that they join.<br>
+
+When a coordinating conjunction joins independent clauses, it is always correct to place a comma before the conjunction:</p>
+
+<li>I want to work as an interpreter in the future, <b>so</b> I am studying Russian at university.</li>
+<p class="para">However, if the independent clauses are short and well-balanced, a comma is not really essential:</p>
+
+<li>She is kind <b>so</b> she helps people.</li>
+<p class="para">When "and" is used with the last word of a list, a comma is optional:</p>
+
+<li>He drinks beer, whisky, wine <b>and</b> rum.</li>
+<li>He drinks beer, whisky, wine <b>and</b> rum.</li>
+<br>
+
+<div class="heading">Subordinating Conjunctions</div>
+<p class="para">A subordinating conjunction joins a subordinate (dependent) clause to a main (independent) clause:</p>
+
+main clause + subordinate clause
+
+<p class="para">Here are some common subordinating conjunctions:</p>
+<p class="para">
+<b>after, although, as, because, before, how, if, once, since, than, that, though, till, until, when, where, whether, while</b>
+<p class="para">Look at this example:</p>
+
+
+<table border="1" Cellpadding="2" Cellspacing="0">
+<tr>
+<td>main or independent clause</td>
+<td>subordinate or dependent clause</td>
+</tr>
+<tr>
+<td>Ram went swimming</td>
+<td><b>although</b></td>
+<td> it was raining.</td>
+</tr>
+<tr>
+ <td>subordinating conjunction</td>
+</tr>
+</table>
+
+<p class="para">A subordinating conjunction always comes at the beginning of a subordinate clause. It "introduces" a subordinate clause.
+However, a subordinate clause can come <b>after</b> or <b>before</b> a main clause. Thus, two structures are possible:</p>
+<p class="para">
+main clause + subordinate clause
+Ram went swimming <b>although it was raining.</b>
+
++ subordinate clause main clause
+<b>Although it was raining</b>, Ram went swimming.
+</p>
+<br>
+<hr>
+<br>
+<button style="width:300px; color:  ;  height: 74px; margin:22px;"> <a href="conjuctionquiz.html"><h1><b>free  Sample Quiz</h1></b></a></button>
+ 
+
+  <footer>
+   <div class="footer-cont">
+        <h3> GrammarMaster </h3>
+		   <p> GrammarMaster is a convenient, fun and flexible online 
+		   course which takes you from the most basic through to more complex elements 
+		   of UK English grammar. With tutor support, build the foundations to be an effective communicator .</p>
+		     <div class="socials">
+			     <li><a href="#"> <i class="fa fa-facebook">           </i></a></li>
+                 <li><a href="#"> <i class="fa fa-twitter">              </i></a></li>
+				 <li><a href="#"> <i class="fa fa-google-plus">       </i></a></li>
+				 <li><a href="#"> <i class="fa fa-youtube">            </i></a></li>
+				 <li><a href="#"> <i class="fa fa-linkedin-square"> </i></a></li>
+			 </div>
+        </div>     
+			 <div class="footer-bottom">
+			 <p>copyright & copy; 2021
+			 <a href="#">GrammarMaster</a>
+			 </p>
+			 
+			 
+			 <div class="footer-menu">
+			     
+				      <li><a href="bosternavbar.html">home</a></li>
+					  <li><a href="aboutus.html">About</a></li>
+					  <li><a href="contactus.html">Contact</a></li>
+					  <li><a href="pronunciation.html">pronunciation</a></li>
+				 			 
+   </div>
+   </div>
+</footer>
+	<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<script>
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
+
+
